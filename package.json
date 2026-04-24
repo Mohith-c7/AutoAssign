@@ -1,0 +1,27 @@
+{
+  "name": "autoassign-ai",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "extension",
+    "backend"
+  ],
+  "scripts": {
+    "dev:extension": "npm run dev --workspace extension",
+    "build:extension": "npm run build --workspace extension",
+    "test:extension": "npm run test --workspace extension",
+    "lint:extension": "npm run lint --workspace extension",
+    "dev:backend": "npm run serve --workspace backend",
+    "build:backend": "npm run build --workspace backend",
+    "test:backend": "npm run test --workspace backend",
+    "lint:backend": "npm run lint --workspace backend",
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "prettier": "^3.3.3"
+  }
+}

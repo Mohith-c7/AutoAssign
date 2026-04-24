@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo Backend build will be added in later phases.",
+    "serve": "firebase emulators:start --only functions,firestore",
+    "test": "echo No backend tests yet.",
+    "lint": "eslint functions --ext js"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.0.1",
+    "google-auth-library": "^9.15.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0"
+  }
+}
